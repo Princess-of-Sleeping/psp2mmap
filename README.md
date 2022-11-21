@@ -17,7 +17,7 @@ Currently only 3.60 is supported. For other fw support you need to add new offse
 
 intr problem
 ```
-`mmap_excp_handler` does disables interrupts for sceIoPread/sceIoPwrite, but the behavior is undefined if process_exit intr occurs at that moment.
+`mmap_excp_handler` does enable interrupts for sceIoPread/sceIoPwrite, but the behavior is undefined if process_exit intr occurs at that moment.
 So developers should program in a way that takes that into account.
 However, the probability of encountering this problem is less than 3%.
 ```
