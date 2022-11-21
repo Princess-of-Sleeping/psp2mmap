@@ -54,7 +54,7 @@ vita_create_self(${PROJECT_NAME}.self ${PROJECT_NAME}
   REL_OPTIMIZE
 )
 
-vita_create_vpk(mmap_tester.vpk "KMLDR0000" ${PROJECT_NAME}.self
+vita_create_vpk(mmap_tester.vpk "MMAP00001" ${PROJECT_NAME}.self
   VERSION "01.00"
   NAME "mmap_tester"
 )
