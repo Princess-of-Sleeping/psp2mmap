@@ -1,0 +1,13 @@
+psp2mmap:
+  attributes: 7
+  version:
+    major: 1
+    minor: 1
+  main:
+    start: module_start
+  libraries:
+    MmapForUser:
+      syscall: true
+      functions:
+        - mmap_for_user
+        - munmap
